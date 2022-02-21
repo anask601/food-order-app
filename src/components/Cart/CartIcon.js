@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-const CardIcon = () => {
+const CartIcon = () => {
   return (
     <Fragment>
       <svg
@@ -14,4 +14,4 @@ const CardIcon = () => {
   );
 };
 
-export default CardIcon;
+export default CartIcon;

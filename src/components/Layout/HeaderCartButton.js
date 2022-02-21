@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import CardIcon from "../Cards/CardIcon";
+import CartIcon from "../Cart/CartIcon";
 import classes from "./HeaderCartButton.module.css";
 
 const HeaderCartButton = () => {
@@ -7,7 +7,7 @@ const HeaderCartButton = () => {
     <Fragment>
       <button className={classes.button}>
         <span className={classes.icon}>
-          <CardIcon />
+          <CartIcon />
         </span>
         <span>Your Cart💲</span>
         <span className={classes.badge}>3</span>
