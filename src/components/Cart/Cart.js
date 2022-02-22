@@ -7,7 +7,10 @@ import CartItem from "./CartItem";
 
 const Cart = ({ onClose }) => {
   const cartCtx = useContext(CartContext);
+
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+  console.log(totalAmount);
+
   const hasItems = cartCtx.items.length > 0;
 
   const cartItemRemoveHandler = (id) => {

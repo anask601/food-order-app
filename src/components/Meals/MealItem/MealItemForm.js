@@ -5,6 +5,7 @@ import classes from "./MealItemForm.module.css";
 const MealItemForm = ({ onAddToCart }) => {
   const amountInputRef = useRef();
   const [amountIsValid, setAmountIsValid] = useState(true);
+
   const submitHandler = (event) => {
     event.preventDefault();
 
@@ -13,7 +14,7 @@ const MealItemForm = ({ onAddToCart }) => {
 
     if (
       enteredAmount.trim().length === 0 ||
-      enteredAmount < 0 ||
+      enteredAmount < 1 ||
       enteredAmount > 5
     ) {
       setAmountIsValid(false);

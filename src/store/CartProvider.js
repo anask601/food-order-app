@@ -1,8 +1,9 @@
 import React, { useReducer } from "react";
 import CartContext from "./cart-context";
+
 const defaultCartState = {
   items: [],
-  totalAmount: [],
+  totalAmount: 0,
 };
 
 const cartReducer = (state, action) => {
