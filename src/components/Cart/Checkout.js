@@ -43,7 +43,7 @@ const Checkout = (props) => {
       return;
     }
 
-    props.onSubmit({
+    props.onConfirm({
       name: enteredName,
       street: enteredStreet,
       city: enteredCity,
